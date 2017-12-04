@@ -136,6 +136,34 @@
 .navigation .navigation_container .col-small {
   width: calc(20% - 10px);
 }
+.navigation .navigation_container .column2 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.navigation .navigation_container .column3 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.navigation .navigation_container .column4 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.navigation .navigation_container .column5 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.navigation .navigation_container .column6 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.navigation .navigation_container .column7 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.navigation .navigation_container .column8 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
 @-webkit-keyframes navBg {
   0% {
     opacity: 0;
