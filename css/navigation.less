@@ -1,0 +1,194 @@
+@import "vars";
+.navigation{
+  min-height: 100vh;
+  background: url("../img/navigation-BG.jpg") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px;
+
+  .navigation_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 970px;
+
+    .column{
+      height: 235px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      transition: @transition;
+
+      a{
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .column_bg{
+          position: absolute;
+          top:0;
+          left:0;
+          height: 100%;
+          width: 100%;
+          z-index: 1;
+          opacity: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        .bg1{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg2{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg3{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg4{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg5{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg6{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg7{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+        .bg8{
+          background: url("../img/nav-bg-1.jpg") no-repeat;
+          background-size: cover;
+          background-position: 50% 100%;
+        }
+
+        .column_content{
+          position: relative;
+          height: 100%;
+          z-index: 2;
+          background: rgba(255,255,255,0.9);
+          transition: @transition;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+
+          h6{
+            margin-top: 35px;
+            color: #484848;
+            font-size: 24px;
+            font-weight: 500;
+            transition: @transition;
+            opacity: 1;
+          }
+        }
+      }
+
+      &:hover{
+
+        a{
+
+          .column_bg{
+            -webkit-animation: navBg 1s ease;
+            animation: navBg 1s ease;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+          }
+
+          .column_content{
+            background: rgba(255,255,255,0);
+
+            h6{
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .col-large{
+      width: ~"calc(50% - 10px)";
+    }
+
+    .col-medium{
+      width: ~"calc(40% - 10px)";
+    }
+
+    .col-small{
+      width: ~"calc(20% - 10px)";
+    }
+  }
+}
+
+@-webkit-keyframes navBg {
+  0%{
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50%{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  100%{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes navBg {
+  0%{
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50%{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  100%{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
