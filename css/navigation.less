@@ -58,6 +58,63 @@
         }
       }
 
+      &:first-child{
+        a{
+          .column_content{
+            img{
+              @media screen and (max-width: 900px){
+                height: 40px;
+              }
+              @media screen and(max-width: 550px){
+                height: 30px;
+              }
+            }
+            span{
+
+              @media screen and (max-width: 900px){
+                display: inline-block;
+                width: 150px;
+                text-align: center;
+                margin-right: 40px;
+              }
+              @media screen and(max-width: 550px){
+                width: 110px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      &:not(:first-child){
+        a{
+          .column_content{
+            img{
+              @media screen and (max-width: 900px){
+                width: 45px;
+                height: auto;
+              }
+              @media screen and(max-width: 550px){
+                height: 35px;
+              }
+            }
+            span{
+
+              @media screen and (max-width: 900px){
+                display: inline-block;
+                width: 150px;
+                text-align: center;
+                margin-right: 40px;
+              }
+              @media screen and(max-width: 550px){
+                width: auto;
+                margin-right: 45px;
+              }
+            }
+          }
+        }
+      }
+
       a{
         text-decoration: none;
         display: inline-block;
@@ -151,11 +208,11 @@
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
-            padding: 0 40px 0 20px;
+            padding: 0 0 0 20px;
           }
 
           @media screen and(max-width: 550px){
-            padding: 0 10px 0 15px;
+            padding: 0 0 0 15px;
           }
 
           h6{
@@ -172,27 +229,6 @@
 
             @media screen and(max-width: 550px){
               font-size: 18px;
-            }
-          }
-
-          img{
-            @media screen and (max-width: 900px){
-              height: 40px;
-            }
-            @media screen and(max-width: 550px){
-              height: 30px;
-            }
-          }
-
-          span{
-
-            @media screen and (max-width: 900px){
-              display: inline-block;
-              width: 150px;
-              text-align: center;
-            }
-            @media screen and(max-width: 550px){
-              width: 110px;
             }
           }
         }
