@@ -45,6 +45,9 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
+body {
+  min-width: 320px;
+}
 .navigation {
   min-height: 100vh;
   background: url("../img/navigation-BG.jpg") no-repeat center;
