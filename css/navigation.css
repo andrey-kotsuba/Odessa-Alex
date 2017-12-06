@@ -83,13 +83,14 @@
 }
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column:not(:first-child) a .column_content img {
-    width: 45px;
+    width: 40px;
     height: auto;
   }
 }
 @media screen and (max-width: 550px) {
   .navigation .navigation_container .column:not(:first-child) a .column_content img {
-    height: 35px;
+    height: auto;
+    width: 35px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -103,7 +104,7 @@
 @media screen and (max-width: 550px) {
   .navigation .navigation_container .column:not(:first-child) a .column_content span {
     width: auto;
-    margin-right: 45px;
+    margin-right: 48px;
   }
 }
 .navigation .navigation_container .column a {
