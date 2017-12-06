@@ -22,11 +22,38 @@
   width: 100%;
   max-width: 970px;
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    max-width: 600px;
+  }
+}
 .navigation .navigation_container .column {
-  height: 235px;
+  height: 30vm;
+  height: 30vmin;
+  max-height: 235px;
+  min-height: 165px;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.5s ease;
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column {
+    height: 65px;
+    margin-right: 0;
+    min-height: 65px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column:last-child {
+    margin-bottom: 0;
+  }
 }
 .navigation .navigation_container .column a {
   text-decoration: none;
@@ -46,6 +73,11 @@
   opacity: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column a .column_bg {
+    display: none;
+  }
 }
 .navigation .navigation_container .column a .bg1 {
   background: url("../img/nav-bg-1.jpg") no-repeat;
@@ -107,6 +139,24 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column a .column_content {
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 40px 0 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navigation .navigation_container .column a .column_content {
+    padding: 0 10px 0 15px;
+  }
+}
 .navigation .navigation_container .column a .column_content h6 {
   margin-top: 35px;
   color: #484848;
@@ -114,6 +164,44 @@
   font-weight: 500;
   transition: all 0.5s ease;
   opacity: 1;
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column a .column_content h6 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navigation .navigation_container .column a .column_content h6 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column a .column_content img {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navigation .navigation_container .column a .column_content img {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column a .column_content span {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navigation .navigation_container .column a .column_content span {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column:hover {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+  }
 }
 .navigation .navigation_container .column:hover a .column_bg {
   -webkit-animation: navBg 1s ease;
@@ -124,17 +212,42 @@
 .navigation .navigation_container .column:hover a .column_content {
   background: rgba(255, 255, 255, 0);
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column:hover a .column_content {
+    background: #ffffff;
+  }
+}
 .navigation .navigation_container .column:hover a .column_content h6 {
   opacity: 0;
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column:hover a .column_content h6 {
+    opacity: 1;
+  }
 }
 .navigation .navigation_container .col-large {
   width: calc(50% - 10px);
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .col-large {
+    width: 100%;
+  }
+}
 .navigation .navigation_container .col-medium {
   width: calc(40% - 10px);
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .col-medium {
+    width: 100%;
+  }
+}
 .navigation .navigation_container .col-small {
   width: calc(20% - 10px);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .col-small {
+    width: 100%;
+  }
 }
 .navigation .navigation_container .column2 {
   -webkit-animation-delay: 0.1s;
