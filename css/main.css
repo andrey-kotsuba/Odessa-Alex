@@ -95,6 +95,8 @@
     margin-right: 0;
     min-height: 65px;
     margin-bottom: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }
 @media screen and (max-width: 900px) {
