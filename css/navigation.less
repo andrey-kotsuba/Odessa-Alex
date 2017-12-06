@@ -232,6 +232,10 @@
               font-size: 18px;
             }
           }
+
+          .hover{
+            display: none;
+          }
         }
       }
 
@@ -262,6 +266,21 @@
 
               @media screen and (max-width: 900px){
                 opacity: 1;
+              }
+            }
+
+            .unhover{
+              display: none;
+
+              @media screen and (max-width: 900px){
+                display: inline-block;
+              }
+            }
+            .hover{
+              display: inline-block;
+
+              @media screen and (max-width: 900px){
+                display: none;
               }
             }
           }
