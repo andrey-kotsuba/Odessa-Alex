@@ -131,14 +131,20 @@ body {
     margin-right: 10px;
   }
 }
+.navigation .navigation_container .column:not(:first-child) a .column_content svg {
+  fill: #ecaf35;
+  transition: all 0.5s ease;
+  width: 60px;
+  height: auto;
+}
 @media screen and (max-width: 900px) {
-  .navigation .navigation_container .column:not(:first-child) a .column_content img {
+  .navigation .navigation_container .column:not(:first-child) a .column_content svg {
     width: 40px;
     height: auto;
   }
 }
 @media screen and (max-width: 550px) {
-  .navigation .navigation_container .column:not(:first-child) a .column_content img {
+  .navigation .navigation_container .column:not(:first-child) a .column_content svg {
     height: auto;
     width: 35px;
   }
@@ -277,9 +283,6 @@ body {
     font-size: 18px;
   }
 }
-.navigation .navigation_container .column a .column_content .hover {
-  display: none;
-}
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column:hover {
     -webkit-transform: scale(1.04);
@@ -322,6 +325,15 @@ body {
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column:hover a .column_content .hover {
     display: none;
+  }
+}
+.navigation .navigation_container .column:hover:not(:first-child) a .column_content svg {
+  fill: #fff;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column:hover:not(:first-child) a .column_content svg {
+    fill: #ecaf35;
   }
 }
 .navigation .navigation_container .col-large {
