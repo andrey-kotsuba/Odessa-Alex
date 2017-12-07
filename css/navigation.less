@@ -279,12 +279,6 @@
       }
 
       &:hover{
-        -webkit-transform: scale(1.02);
-        transform: scale(1.02);
-        @media screen and (max-width: 900px){
-          -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-        }
 
         a{
 
@@ -340,6 +334,24 @@
             }
           }
         }
+      }
+    }
+
+    .column-hover{
+      -webkit-transform: scale(1.08);
+      transform: scale(1.08);
+      @media screen and (max-width: 900px){
+        -webkit-transform: scale(1.04);
+        transform: scale(1.04);
+      }
+    }
+
+    .column-not-hover{
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      @media screen and (max-width: 900px){
+        -webkit-transform: scale(1);
+        transform: scale(1);
       }
     }
 
