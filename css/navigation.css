@@ -28,6 +28,11 @@
   justify-content: flex-end;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_burger {
+    max-width: 600px;
+  }
+}
 .navigation .navigation_burger .burger {
   margin-right: 10px;
   cursor: pointer;
@@ -72,6 +77,8 @@
   transition: all 0.5s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  position: relative;
+  z-index: 10;
 }
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column {
@@ -160,7 +167,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 50;
   opacity: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -213,7 +220,7 @@
 .navigation .navigation_container .column a .column_content {
   position: relative;
   height: 100%;
-  z-index: 2;
+  z-index: 60;
   background: rgba(255, 255, 255, 0.9);
   transition: all 0.5s ease;
   display: -webkit-box;
@@ -268,6 +275,15 @@
     font-size: 18px;
   }
 }
+.navigation .navigation_container .column:hover {
+  z-index: 20;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
 .navigation .navigation_container .column:hover a .column_bg {
   -webkit-animation: navBg 1s ease;
   animation: navBg 1s ease;
@@ -315,20 +331,6 @@
     fill: #ecaf35;
   }
 }
-.navigation .navigation_container .column-hover {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-}
-@media screen and (max-width: 900px) {
-  .navigation .navigation_container .column-hover {
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
-  }
-}
-.navigation .navigation_container .column-not-hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-}
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column-not-hover {
     -webkit-transform: scale(1);
@@ -359,33 +361,161 @@
     width: 100%;
   }
 }
+.navigation .navigation_container .column1:hover {
+  -moz-transform: scale(1.1) translate(20px, 10px);
+  -webkit-transform: scale(1.1) translate(20px, 10px);
+  -o-transform: scale(1.1) translate(20px, 10px);
+  -ms-transform: scale(1.1) translate(20px, 10px);
+  transform: scale(1.1) translate(20px, 10px);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column1:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
+}
 .navigation .navigation_container .column2 {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
+}
+.navigation .navigation_container .column2:hover {
+  -moz-transform: scale(1.1) translate(-20px, 10px);
+  -webkit-transform: scale(1.1) translate(-20px, 10px);
+  -o-transform: scale(1.1) translate(-20px, 10px);
+  -ms-transform: scale(1.1) translate(-20px, 10px);
+  transform: scale(1.1) translate(-20px, 10px);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column2:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
 }
 .navigation .navigation_container .column3 {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
+.navigation .navigation_container .column3:hover {
+  -moz-transform: scale(1.1) translate(17px, 0);
+  -webkit-transform: scale(1.1) translate(17px, 0);
+  -o-transform: scale(1.1) translate(17px, 0);
+  -ms-transform: scale(1.1) translate(17px, 0);
+  transform: scale(1.1) translate(17px, 0);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column3:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
+}
 .navigation .navigation_container .column4 {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
+}
+.navigation .navigation_container .column4:hover {
+  -moz-transform: scale(1.15) translate(0, 0);
+  -webkit-transform: scale(1.15) translate(0, 0);
+  -o-transform: scale(1.15) translate(0, 0);
+  -ms-transform: scale(1.15) translate(0, 0);
+  transform: scale(1.15) translate(0, 0);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column4:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
 }
 .navigation .navigation_container .column5 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
+.navigation .navigation_container .column5:hover {
+  -moz-transform: scale(1.1) translate(-17px, 0);
+  -webkit-transform: scale(1.1) translate(-17px, 0);
+  -o-transform: scale(1.1) translate(-17px, 0);
+  -ms-transform: scale(1.1) translate(-17px, 0);
+  transform: scale(1.1) translate(-17px, 0);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column5:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
+}
 .navigation .navigation_container .column6 {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+}
+.navigation .navigation_container .column6:hover {
+  -moz-transform: scale(1.15) translate(12px, -15px);
+  -webkit-transform: scale(1.15) translate(12px, -15px);
+  -o-transform: scale(1.15) translate(12px, -15px);
+  -ms-transform: scale(1.15) translate(12px, -15px);
+  transform: scale(1.15) translate(12px, -15px);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column6:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
 }
 .navigation .navigation_container .column7 {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
+.navigation .navigation_container .column7:hover {
+  -moz-transform: scale(1.1) translate(0, -11px);
+  -webkit-transform: scale(1.1) translate(0, -11px);
+  -o-transform: scale(1.1) translate(0, -11px);
+  -ms-transform: scale(1.1) translate(0, -11px);
+  transform: scale(1.1) translate(0, -11px);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column7:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
+}
 .navigation .navigation_container .column8 {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
+}
+.navigation .navigation_container .column8:hover {
+  -moz-transform: scale(1.1) translate(-17px, -11px);
+  -webkit-transform: scale(1.1) translate(-17px, -11px);
+  -o-transform: scale(1.1) translate(-17px, -11px);
+  -ms-transform: scale(1.1) translate(-17px, -11px);
+  transform: scale(1.1) translate(-17px, -11px);
+}
+@media screen and (max-width: 900px) {
+  .navigation .navigation_container .column8:hover {
+    -moz-transform: scale(1.02) translate(0, 0);
+    -webkit-transform: scale(1.02) translate(0, 0);
+    -o-transform: scale(1.02) translate(0, 0);
+    -ms-transform: scale(1.02) translate(0, 0);
+    transform: scale(1.02) translate(0, 0);
+  }
 }
 .navigation .navigation_footer {
   width: 100%;
@@ -401,9 +531,19 @@
   -ms-flex-align: center;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+  .navigation .navigation_footer {
+    max-width: 600px;
+  }
+}
 .navigation .navigation_footer .discription p {
   color: #fff;
   font-size: 14px;
+}
+@media screen and (max-width: 500px) {
+  .navigation .navigation_footer .discription p {
+    font-size: 10px;
+  }
 }
 .navigation .navigation_footer .social {
   margin-right: 10px;
