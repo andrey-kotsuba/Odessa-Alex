@@ -381,12 +381,6 @@ body {
     fill: #ecaf35;
   }
 }
-@media screen and (max-width: 900px) {
-  .navigation .navigation_container .column-not-hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 .navigation .navigation_container .col-large {
   width: calc(50% - 10px);
 }
