@@ -61,7 +61,36 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 15px;
+}
+.navigation .navigation_burger {
+  width: 100%;
+  max-width: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.navigation .navigation_burger .burger {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navigation .navigation_burger .burger .burger_line {
+  height: 4px;
+  width: 35px;
+  background: #fff;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+.navigation .navigation_burger .burger .burger_line:last-child {
+  margin-bottom: 0;
 }
 .navigation .navigation_container {
   display: -webkit-box;
@@ -84,13 +113,15 @@ body {
   }
 }
 .navigation .navigation_container .column {
-  height: 30vm;
-  height: 30vmin;
+  height: 27vm;
+  height: 27vmin;
   max-height: 235px;
   min-height: 165px;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column {
@@ -170,6 +201,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .navigation .navigation_container .column a .column_bg {
   position: absolute;
@@ -246,6 +279,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column a .column_content {
@@ -282,6 +317,10 @@ body {
   .navigation .navigation_container .column a .column_content h6 {
     font-size: 18px;
   }
+}
+.navigation .navigation_container .column:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column:hover {
@@ -387,6 +426,37 @@ body {
 .navigation .navigation_container .column8 {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
+}
+.navigation .navigation_footer {
+  width: 100%;
+  max-width: 970px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.navigation .navigation_footer .discription p {
+  color: #fff;
+  font-size: 14px;
+}
+.navigation .navigation_footer .social {
+  margin-right: 10px;
+}
+.navigation .navigation_footer .social a {
+  margin-right: 15px;
+}
+.navigation .navigation_footer .social a:last-child {
+  margin-right: 0;
+}
+.navigation .navigation_footer .social a i {
+  color: #fff;
+  font-size: 20px;
 }
 @-webkit-keyframes navBg {
   0% {
