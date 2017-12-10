@@ -8,6 +8,11 @@
   max-width: 990px;
   margin: 0 auto;
 }
+@media screen and (max-width: 990px) {
+  .footer .container {
+    padding: 0 5px;
+  }
+}
 .footer .container .top_footer {
   display: -webkit-box;
   display: -ms-flexbox;
