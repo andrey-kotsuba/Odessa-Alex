@@ -175,8 +175,18 @@ button {
 .btn:active {
   background-color: #f0c738;
 }
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: #8bac53;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .shares {
-  background: url("../img/news-bg.jpg") no-repeat;
+  background: url("../img/shares-bg.jpg") no-repeat;
   background-size: cover;
   padding: 50px 0 0 0;
 }
@@ -220,6 +230,47 @@ button {
 .popular-products .container .product-slider .item-slider {
   outline: none;
   float: left;
+}
+.delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 55px 0;
+}
+.delivery .delivery-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 320px;
+}
+.delivery .delivery-column span svg {
+  width: 65px;
+  height: auto;
+}
+.delivery .delivery-column div {
+  margin-left: 30px;
+}
+.delivery .delivery-column div h5 {
+  font-weight: 500;
+  color: #686868;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.delivery .delivery-column div p {
+  color: #686868;
+  font-weight: 300;
 }
 .novelties {
   background: url("../img/news-bg.jpg") no-repeat;
