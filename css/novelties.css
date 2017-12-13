@@ -1,0 +1,23 @@
+.novelties {
+  background: url("../img/news-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 50px 0 0 0;
+}
+.novelties .container {
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+  position: relative;
+}
+.novelties .container .title-lines .line {
+  background: #4b79bb;
+}
+.novelties .container .product-slider {
+  overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+.novelties .container .product-slider .item-slider {
+  outline: none;
+  float: left;
+}

@@ -1,0 +1,23 @@
+.popular-products {
+  background: url("../img/news-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 50px 0 0 0;
+}
+.popular-products .container {
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+  position: relative;
+}
+.popular-products .container .title-lines .line {
+  background: #a3c36d;
+}
+.popular-products .container .product-slider {
+  overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+.popular-products .container .product-slider .item-slider {
+  outline: none;
+  float: left;
+}

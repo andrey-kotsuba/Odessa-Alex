@@ -1,0 +1,36 @@
+.about-shop {
+  padding: 60px 0 40px 0;
+}
+.about-shop .container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.about-shop .container .about-shop-title {
+  text-align: center;
+}
+.about-shop .container .about-shop-title h5 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #484848;
+}
+.about-shop .container .about-shop-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.about-shop .container .about-shop-columns .column {
+  width: 100%;
+  max-width: 364px;
+  margin-top: 40px;
+}
+.about-shop .container .about-shop-columns .column:first-child {
+  margin-right: 10px;
+}
+.about-shop .container .about-shop-columns .column p {
+  font-size: 13px;
+  color: #484848;
+}
