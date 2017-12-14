@@ -251,6 +251,23 @@ button {
   background: url("../img/slide-bg-1.jpg") no-repeat center;
   background-size: cover;
 }
+.slider .slick-prev,
+.slider .slick-next {
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+}
+.slider .slick-prev {
+  left: 50px;
+}
+.slider .slick-next {
+  right: 50px;
+}
+.slider .slick-prev:before,
+.slider .slick-next:before {
+  font-size: 50px;
+  color: #ffffff;
+}
 .shares {
   background: url("../img/shares-bg.jpg") no-repeat;
   background-size: cover;
