@@ -80,6 +80,7 @@ button {
   text-align: center;
 }
 .product-card {
+  display: inline-block;
   width: 270px;
   margin: 0 auto;
   background-color: #fff;
@@ -149,8 +150,12 @@ button {
 .product-card .product-info .product-name {
   margin-bottom: 5px;
 }
-.product-card .product-info .product-name h5 {
+.product-card .product-info .product-name a {
+  text-decoration: none;
   color: #242424;
+}
+.product-card .product-info .product-name a:hover {
+  text-decoration: underline;
 }
 .product-card .product-info .product-characteristics p {
   font-size: 13px;
@@ -471,6 +476,15 @@ button {
   outline: none;
   float: left;
 }
+.shares .product-card:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  height: 63px;
+  width: 82px;
+  background: url("../img/shares-img.png") no-repeat;
+}
 .categories {
   padding: 40px 0 60px 0;
 }
@@ -622,6 +636,15 @@ button {
 .novelties .container .product-slider .item-slider {
   outline: none;
   float: left;
+}
+.novelties .product-card:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  height: 63px;
+  width: 82px;
+  background: url("../img/novelties-img.png") no-repeat;
 }
 .about-shop {
   padding: 60px 0 40px 0;

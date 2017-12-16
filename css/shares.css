@@ -21,3 +21,12 @@
   outline: none;
   float: left;
 }
+.shares .product-card:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  height: 63px;
+  width: 82px;
+  background: url("../img/shares-img.png") no-repeat;
+}

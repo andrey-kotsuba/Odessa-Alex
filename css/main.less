@@ -103,6 +103,7 @@ button{
 }
 
 .product-card{
+  display: inline-block;
   width: 270px;
   margin: 0 auto;
   background-color: #fff;
@@ -176,8 +177,12 @@ button{
 
     .product-name{
       margin-bottom: 5px;
-      h5{
+      a{
+        text-decoration: none;
         color: #242424;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 
