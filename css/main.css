@@ -186,6 +186,186 @@ button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.header .cabinet {
+  background: #2d2d2d;
+  height: 25px;
+}
+.header .cabinet .container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+.header .cabinet .currency-and-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header .cabinet .currency-and-language select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+  width: 37px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.header .cabinet .currency-and-language select option {
+  background: #282828;
+  font-size: 12px;
+  font-weight: 300;
+}
+.header .cabinet .currency-and-language .currency,
+.header .cabinet .currency-and-language .language {
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 0;
+  background: #2d2d2d;
+}
+.header .cabinet .currency-and-language .currency:after,
+.header .cabinet .currency-and-language .language:after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 2px;
+  background: #2d2d2d;
+  color: #fff;
+  pointer-events: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 9px;
+}
+.header .cabinet .currency-and-language .currency {
+  margin-right: 10px;
+}
+.header .cabinet .entry a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+}
+.header .cabinet .entry a img {
+  margin-left: 5px;
+}
+.header .header-logo {
+  padding: 25px 0;
+}
+.header .header-logo .container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header .header-logo .container .social a {
+  margin-right: 7px;
+}
+.header .header-logo .container .social a:last-child {
+  margin-right: 0;
+}
+.header .header-logo .container .social a i {
+  transition: all 0.5s ease;
+  color: #515151;
+}
+.header .header-logo .container .social a:hover i {
+  color: #1b00d5;
+}
+.header .header-logo .container .basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #262626;
+}
+.header .header-logo .container .basket .basket-img {
+  position: relative;
+  margin-right: 15px;
+}
+.header .header-logo .container .basket .basket-img .basket-count {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #8bac53;
+  color: #fff;
+  font-weight: 300;
+  font-size: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header .menu {
+  width: 100%;
+  max-width: 892px;
+  margin: 10px auto;
+  border-top: 1px solid #dcdcdc;
+}
+.header .menu ul {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.header .menu ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: 300;
+}
 .slider {
   height: 590px;
 }
