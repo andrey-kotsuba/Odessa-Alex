@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -440,7 +441,306 @@
     </div>
 
     <div class="products-catalog">
-
+        <div class="title-container">
+            <div class="title-lines">
+                <div class="line"></div>
+                <h4>Каталог</h4>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="catalog-container">
+            <div class="filters">
+                <div class="catalog">
+                    <div class="title">
+                        <h3>Каталог товаров</h3>
+                    </div>
+                    <div class="catalog-filter">
+                        <h5 class="active">Гербициды</h5>
+                        <h5>Фунгициды</h5>
+                        <h5>Инсектициды</h5>
+                        <h5>Протравители</h5>
+                        <h5>Родентициды</h5>
+                        <h5>Регуляторы роста</h5>
+                        <h5>Удобрения</h5>
+                        <h5>Микроудобрения</h5>
+                        <h5>Вспомогательные вещества</h5>
+                        <h5>Десиканты</h5>
+                        <h5>Фумиганты</h5>
+                        <h5>Семена, посевной материал</h5>
+                        <h5>Акарициды</h5>
+                    </div>
+                </div>
+                <div class="filter-title">
+                    <h6>Фильтры</h6>
+                </div>
+                <div class="manufacturer-filter">
+                    <h6>Производитель:</h6>
+                    <select name="manufacturer">
+                        <option>Syngenta</option>
+                        <option>Syngenta</option>
+                        <option>Syngenta</option>
+                    </select>
+                </div>
+                <div class="price-filter">
+                    <h6>Диапазон цен, <span>грн.</span></h6>
+                    <div class="price-inputs">
+                        <input type="text" placeholder="от">
+                        <input type="text" placeholder="до">
+                    </div>
+                </div>
+                <div class="weight-filter">
+                    <div class="slider-weight">
+                        <p>
+                            <label for="weightMinMax">Вес, кг: </label>
+                            <input type="text" id="weightMinMax" readonly>
+                        </p>
+                        <div id="weight"></div>
+                    </div>
+                </div>
+                <div class="amount-filter">
+                    <div class="slider-amount">
+                        <p>
+                            <label for="amountMinMax">Объем, л: </label>
+                            <input type="text" id="amountMinMax" readonly>
+                        </p>
+                        <div id="amount"></div>
+                    </div>
+                </div>
+                <div class="detailed-filters">
+                    <p>Подробные фильтры</p>
+                </div>
+            </div>
+            <div class="filtered-products">
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered-product-card">
+                    <div class="product-photo">
+                        <img src="img/product-3.png" alt="product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            <a href="#">Крышка 320-4202020 ВОМ МТЗ-320</a>
+                        </div>
+                        <div class="product-characteristics">
+                            <p>(ВОМ задний в сборе) (8 шлицов)</p>
+                        </div>
+                        <div class="button">
+                            <div class="price">
+                                <span>1566 <img src="img/grn-yellow.png" alt="price"></span>
+                            </div>
+                            <button class="btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="popular-products catalog">
@@ -798,6 +1098,7 @@
     </footer>
 
     <script src="libs/jquery-min.js"></script>
+    <script src="libs/jquery-ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/2c8aecedb1.js"></script>
     <script src="js/main.js"></script>

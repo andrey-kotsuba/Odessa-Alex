@@ -1093,6 +1093,257 @@ button {
   background: #c76161;
   box-shadow: 0px 10px 25px -10px #c76161;
 }
+.products-catalog .title-container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto 70px auto;
+}
+.products-catalog .title-container .title-lines .line {
+  background: #8bac53;
+}
+.products-catalog .catalog-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-catalog .catalog-container .filters {
+  width: 228px;
+  border-right: 1px solid #e8e8e8;
+}
+.products-catalog .catalog-container .filters .catalog .title {
+  margin-bottom: 25px;
+}
+.products-catalog .catalog-container .filters .catalog .title h3 {
+  color: #505050;
+  font-size: 16px;
+  font-weight: 400;
+}
+.products-catalog .catalog-container .filters .catalog .catalog-filter h5 {
+  color: #505050;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 18px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.products-catalog .catalog-container .filters .catalog .catalog-filter h5:hover {
+  color: #8bac53;
+  font-weight: 400;
+}
+.products-catalog .catalog-container .filters .catalog .catalog-filter h5:last-child {
+  margin-bottom: 0;
+}
+.products-catalog .catalog-container .filters .catalog .catalog-filter .active {
+  color: #8bac53;
+  font-weight: 400;
+}
+.products-catalog .catalog-container .filters .filter-title {
+  margin: 30px 0;
+}
+.products-catalog .catalog-container .filters .filter-title h6 {
+  color: #505050;
+  font-size: 16px;
+  font-weight: 400;
+}
+.products-catalog .catalog-container .filters .manufacturer-filter {
+  margin-bottom: 25px;
+}
+.products-catalog .catalog-container .filters .manufacturer-filter h6 {
+  color: #505050;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.products-catalog .catalog-container .filters .manufacturer-filter select {
+  width: 200px;
+  border: 1px solid #c5d5a9;
+  outline: 1px solid #c5d5a9;
+  color: #585857;
+  font-size: 13px;
+}
+.products-catalog .catalog-container .filters .price-filter {
+  margin-bottom: 25px;
+}
+.products-catalog .catalog-container .filters .price-filter h6 {
+  color: #505050;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.products-catalog .catalog-container .filters .price-filter .price-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-catalog .catalog-container .filters .price-filter .price-inputs input {
+  width: 75px;
+  height: 30px;
+  border: 1px solid #c5d5a9;
+  padding: 0 5px;
+  margin-right: 18px;
+  font-size: 13px;
+  color: #585857;
+}
+.products-catalog .catalog-container .filters .price-filter .price-inputs input:last-child {
+  margin-right: 0;
+}
+.products-catalog .catalog-container .filters .weight-filter,
+.products-catalog .catalog-container .filters .amount-filter {
+  margin-bottom: 30px;
+}
+.products-catalog .catalog-container .filters .weight-filter label,
+.products-catalog .catalog-container .filters .amount-filter label {
+  display: inline-block;
+  color: #505050;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.products-catalog .catalog-container .filters .weight-filter input,
+.products-catalog .catalog-container .filters .amount-filter input {
+  border: 0;
+  color: #f0c738;
+  font-weight: bold;
+  outline: none;
+}
+.products-catalog .catalog-container .filters .weight-filter .ui-state-default,
+.products-catalog .catalog-container .filters .amount-filter .ui-state-default,
+.products-catalog .catalog-container .filters .weight-filter .ui-widget-content .ui-state-default,
+.products-catalog .catalog-container .filters .amount-filter .ui-widget-content .ui-state-default,
+.products-catalog .catalog-container .filters .weight-filter .ui-widget-header .ui-state-default,
+.products-catalog .catalog-container .filters .amount-filter .ui-widget-header .ui-state-default,
+.products-catalog .catalog-container .filters .weight-filter .ui-button,
+.products-catalog .catalog-container .filters .amount-filter .ui-button,
+.products-catalog .catalog-container .filters .weight-filter html .ui-button.ui-state-disabled:hover,
+.products-catalog .catalog-container .filters .amount-filter html .ui-button.ui-state-disabled:hover,
+.products-catalog .catalog-container .filters .weight-filter html .ui-button.ui-state-disabled:active,
+.products-catalog .catalog-container .filters .amount-filter html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #f0c738;
+  font-weight: normal;
+  color: #454545;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  outline: none;
+}
+.products-catalog .catalog-container .filters .weight-filter .ui-slider-horizontal,
+.products-catalog .catalog-container .filters .amount-filter .ui-slider-horizontal {
+  height: 4px;
+  width: 160px;
+}
+.products-catalog .catalog-container .filters .weight-filter .ui-widget-content,
+.products-catalog .catalog-container .filters .amount-filter .ui-widget-content {
+  background: #a5a5a5;
+}
+.products-catalog .catalog-container .filters .weight-filter .ui-widget.ui-widget-content,
+.products-catalog .catalog-container .filters .amount-filter .ui-widget.ui-widget-content {
+  border: none;
+}
+.products-catalog .catalog-container .filters .weight-filter .ui-widget-header,
+.products-catalog .catalog-container .filters .amount-filter .ui-widget-header {
+  background: #f0c738;
+}
+.products-catalog .catalog-container .filters .weight-filter .ui-slider-horizontal .ui-slider-handle,
+.products-catalog .catalog-container .filters .amount-filter .ui-slider-horizontal .ui-slider-handle {
+  top: -6px;
+}
+.products-catalog .catalog-container .filters .detailed-filters p {
+  font-weight: 300;
+  color: #8bac53;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.products-catalog .catalog-container .filtered-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: calc(872px);
+}
+.filtered-product-card {
+  width: 170px;
+  height: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.filtered-product-card .product-photo {
+  height: 192px;
+  border: 1px solid #e8e8e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.filtered-product-card .product-info {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.filtered-product-card .product-info .product-name {
+  margin-top: 5px;
+}
+.filtered-product-card .product-info .product-name a {
+  color: #242424;
+  text-decoration: none;
+}
+.filtered-product-card .product-info .product-name a:hover {
+  text-decoration: underline;
+}
+.filtered-product-card .product-info .product-characteristics {
+  margin-top: 5px;
+}
+.filtered-product-card .product-info .product-characteristics p {
+  font-weight: 300;
+  color: #3b3b3b;
+  font-size: 13px;
+}
+.filtered-product-card .product-info .button {
+  margin-top: auto;
+}
+.filtered-product-card .product-info .button .price {
+  margin-bottom: 5px;
+}
+.filtered-product-card .product-info .button .price span {
+  color: #e6b504;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.filtered-product-card .product-info .button .price span img {
+  height: 12px;
+}
 .navigation {
   min-height: 100vh;
   background: url("../img/navigation-BG.jpg") no-repeat center;
