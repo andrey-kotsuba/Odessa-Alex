@@ -229,7 +229,22 @@ button{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.popular-products.catalog{
+  .container{
+    .title-lines{
+      .line{
+        background: #8ecdf6;
+      }
+    }
+  }
+  .product-card{
+    .product-price{
+      background-color: #8ecdf6;
+    }
+  }
+}
 @import "vars";
+//main.html
 @import "header";
 @import "slider";
 @import "shares";
@@ -240,4 +255,7 @@ button{
 @import "about-shop";
 @import "news";
 @import "footer";
+//catalog.html
+@import "catalog-categories";
+//navigation.html
 @import "navigation";
