@@ -3,6 +3,11 @@
   background-size: cover;
   padding: 50px 0 35px 0;
 }
+@media screen and (max-width: 750px) {
+  .footer {
+    padding: 20px 0;
+  }
+}
 .footer .container {
   width: 100%;
   max-width: 990px;
@@ -19,8 +24,18 @@
   display: flex;
   margin-bottom: 90px;
 }
+@media screen and (max-width: 750px) {
+  .footer .container .top_footer {
+    margin-bottom: 30px;
+  }
+}
 .footer .container .top_footer .info {
   margin-right: 40px;
+}
+@media screen and (max-width: 750px) {
+  .footer .container .top_footer .info {
+    display: none;
+  }
 }
 .footer .container .top_footer .info .info_title {
   margin-bottom: 25px;
@@ -49,6 +64,11 @@
 }
 .footer .container .top_footer .info .info_links a:last-child {
   margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  .footer .container .top_footer .account {
+    display: none;
+  }
 }
 .footer .container .top_footer .account .account_title {
   margin-bottom: 25px;
@@ -88,6 +108,11 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
+@media screen and (max-width: 750px) {
+  .footer .container .top_footer .contacts {
+    margin: 0 auto;
+  }
+}
 .footer .container .top_footer .contacts .contacts_title {
   margin-bottom: 25px;
 }
@@ -121,6 +146,13 @@
   -ms-flex-align: center;
   align-items: center;
 }
+@media screen and (max-width: 750px) {
+  .footer .container .top_footer .contacts .contacts_text .address,
+  .footer .container .top_footer .contacts .contacts_text .phone,
+  .footer .container .top_footer .contacts .contacts_text .mail {
+    margin-bottom: 10px;
+  }
+}
 .footer .container .top_footer .contacts .contacts_text .address img,
 .footer .container .top_footer .contacts .contacts_text .phone img,
 .footer .container .top_footer .contacts .contacts_text .mail img {
@@ -141,6 +173,23 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+@media screen and (max-width: 750px) {
+  .footer .container .bottom_footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer .container .bottom_footer .apps {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer .container .bottom_footer .subscription_form {
+    display: none;
+  }
 }
 .footer .container .bottom_footer .subscription_form .title {
   margin-bottom: 15px;
