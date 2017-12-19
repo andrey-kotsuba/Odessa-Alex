@@ -789,7 +789,7 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 55px 0;
+  padding: 55px 10px;
 }
 @media screen and (max-width: 650px) {
   .delivery {
@@ -797,7 +797,7 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 .delivery .delivery-column {
@@ -815,6 +815,7 @@ button {
 @media screen and (max-width: 650px) {
   .delivery .delivery-column {
     margin: 20px 0;
+    width: 300px;
   }
 }
 .delivery .delivery-column span svg {
