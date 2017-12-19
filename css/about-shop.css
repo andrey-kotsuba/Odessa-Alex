@@ -1,5 +1,10 @@
 .about-shop {
-  padding: 60px 0 40px 0;
+  padding: 60px 10px 40px 10px;
+}
+@media screen and (max-width: 740px) {
+  .about-shop {
+    padding: 60px 15px 40px 15px;
+  }
 }
 .about-shop .container {
   width: 100%;

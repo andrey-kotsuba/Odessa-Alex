@@ -877,7 +877,12 @@ button {
   background: url("../img/novelties-img.png") no-repeat;
 }
 .about-shop {
-  padding: 60px 0 40px 0;
+  padding: 60px 10px 40px 10px;
+}
+@media screen and (max-width: 740px) {
+  .about-shop {
+    padding: 60px 15px 40px 15px;
+  }
 }
 .about-shop .container {
   width: 100%;
@@ -1431,6 +1436,7 @@ button {
     border-bottom: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
     box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
   }
 }
 .products-catalog .catalog-container .filters .catalog .title {
@@ -1872,6 +1878,11 @@ button {
 .product-page .container .general-description-product .product-description .quantity {
   margin-bottom: 28px;
 }
+@media screen and (max-width: 700px) {
+  .product-page .container .general-description-product .product-description .quantity {
+    text-align: center;
+  }
+}
 .product-page .container .general-description-product .product-description .quantity label {
   color: #6f6f6f;
 }
@@ -1890,8 +1901,20 @@ button {
   align-items: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 700px) {
+  .product-page .container .general-description-product .product-description .price {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
 .product-page .container .general-description-product .product-description .price .actual-price {
   margin-left: 35px;
+}
+@media screen and (max-width: 700px) {
+  .product-page .container .general-description-product .product-description .price .actual-price {
+    margin-left: 0;
+  }
 }
 .product-page .container .general-description-product .product-description .price .actual-price span {
   color: #e6b504;
@@ -1914,6 +1937,11 @@ button {
 }
 .product-page .container .general-description-product .product-description .price .not-actual-price span img {
   height: 14px;
+}
+@media screen and (max-width: 700px) {
+  .product-page .container .general-description-product .product-description .button {
+    text-align: center;
+  }
 }
 .product-page .container .detailed-description-product {
   border-top: 1px solid #f7e39b;

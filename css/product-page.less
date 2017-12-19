@@ -170,6 +170,9 @@
         }
         .quantity{
           margin-bottom: 28px;
+          @media screen and (max-width: 700px){
+            text-align: center;
+          }
           label{
             color: #6f6f6f;
           }
@@ -188,8 +191,16 @@
           -ms-flex-align: center;
           align-items: center;
           margin-bottom: 30px;
+          @media screen and (max-width: 700px){
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+          }
           .actual-price{
             margin-left: 35px;
+            @media screen and (max-width: 700px){
+              margin-left: 0;
+            }
              span{
                color: #e6b504;
                font-size: 24px;
@@ -212,6 +223,11 @@
                 height: 14px;
               }
             }
+          }
+        }
+        .button{
+          @media screen and (max-width: 700px){
+            text-align: center;
           }
         }
       }
