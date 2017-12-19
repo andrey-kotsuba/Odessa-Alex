@@ -6,6 +6,9 @@
   .slick-prev, .slick-next {
     top: auto;
     bottom: 30px;
+    @media screen and (max-width: 430px){
+      bottom: 10px;
+    }
   }
   .slick-prev {
     left: 0;
@@ -15,8 +18,12 @@
   }
   .container{
     width: 100%;
-    max-width: 970px;
+    max-width: 1000px;
+    padding: 0 15px;
     margin: 0 auto;
+    @media screen and (max-width: 500px){
+      padding: 0 5px;
+    }
     .bread-crumbs{
       padding: 30px 0 40px 0;
       a{
@@ -39,14 +46,30 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      @media screen and (max-width: 700px){
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+      }
       .product-photos{
         width: 370px;
         position: relative;
+        @media screen and (max-width: 430px){
+          width: 300px;
+        }
         .big-photos{
           position: relative;
           height: 370px;
           border: 1px solid #e8e8e8;
           margin-bottom: 8px;
+          @media screen and (max-width: 430px){
+            height: 300px;
+          }
           .container-photo{
             width: 100%;
             float: left;
@@ -73,6 +96,9 @@
           width: 330px;
           overflow: hidden;
           margin: 0 auto;
+          @media screen and (max-width: 430px){
+            width: 250px;
+          }
           .container-photo{
             float: left;
             outline: none;
@@ -90,6 +116,10 @@
               -webkit-box-pack: center;
               -ms-flex-pack: center;
               justify-content: center;
+              @media screen and (max-width: 430px){
+                height: 60px;
+                width: 60px;
+              }
               img{
                 width: 100%;
               }
@@ -101,6 +131,9 @@
         width: 100%;
         max-width: 600px;
         padding-left: 30px;
+        @media screen and (max-width: 700px){
+          padding-left: 0;
+        }
         .product-name{
           margin-bottom: 10px;
           h2{

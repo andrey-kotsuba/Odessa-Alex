@@ -4,7 +4,8 @@
 }
 .header .cabinet .container {
   width: 100%;
-  max-width: 970px;
+  max-width: 1000px;
+  padding: 0 15px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +17,11 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
+}
+@media screen and (max-width: 450px) {
+  .header .cabinet .container {
+    padding: 0 5px;
+  }
 }
 .header .cabinet .currency-and-language {
   display: -webkit-box;
@@ -92,7 +98,8 @@
 }
 .header .header-logo .container {
   width: 100%;
-  max-width: 970px;
+  max-width: 1000px;
+  padding: 0 15px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +110,11 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+@media screen and (max-width: 450px) {
+  .header .header-logo .container {
+    padding: 0 5px;
+  }
 }
 .header .header-logo .container .social a {
   margin-right: 7px;
@@ -116,6 +128,11 @@
 }
 .header .header-logo .container .social a:hover i {
   color: #1b00d5;
+}
+@media screen and (max-width: 550px) {
+  .header .header-logo .container .logo a img {
+    height: 35px;
+  }
 }
 .header .header-logo .container .basket {
   display: -webkit-box;
@@ -152,6 +169,11 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+@media screen and (max-width: 550px) {
+  .header .header-logo .container .basket span {
+    display: none;
+  }
+}
 .header .menu {
   width: 100%;
   max-width: 892px;
@@ -171,10 +193,30 @@
   justify-content: space-around;
   padding: 20px 0;
 }
+@media screen and (max-width: 550px) {
+  .header .menu ul:last-child a img {
+    width: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .menu ul:last-child a img {
+    width: 12px;
+  }
+}
 .header .menu ul a {
   display: inline-block;
   text-decoration: none;
   color: #3b3b3b;
   font-size: 16px;
   font-weight: 300;
+}
+@media screen and (max-width: 550px) {
+  .header .menu ul a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .menu ul a {
+    font-size: 10px;
+  }
 }

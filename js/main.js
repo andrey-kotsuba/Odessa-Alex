@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $("#filterToggle").click(function(){
+        $(".filters").toggleClass("show");
+    });
+
     $(".tabs").find("div").click(function(){
         $(".tabs").find("div").removeClass("active");
         $(this).addClass("active");
@@ -41,15 +45,22 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 850,
+                breakpoint: 940,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 650,
                 settings: {
                     slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 370,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ]
@@ -59,7 +70,16 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 630,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            }
+         ]
     });
 
     $( "#weight" ).slider({

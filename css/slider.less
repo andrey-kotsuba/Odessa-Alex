@@ -1,9 +1,16 @@
 .slider{
-  height: @slideHeight;
+  height: 590px;
+  position: relative;
+  @media screen and (max-width: 940px){
+    height: 490px;
+  }
+  @media screen and (max-width: 630px){
+    height: 350px;
+  }
 
   .item-slid{
     overflow: hidden;
-    height: @slideHeight;
+    height: 590px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,12 +19,18 @@
     justify-content: flex-end;
     float: left;
     outline: none;
+    @media screen and (max-width: 940px){
+      height: 490px;
+    }
+    @media screen and (max-width: 630px){
+      height: 350px;
+    }
 
     .slids-content{
       height: 100%;
-      width: 62%;
+      width: 100%;
       position: relative;
-      right: -12%;
+      right: -50%;
       background: rgba(0,0,0,0.5);
       display: -webkit-box;
       display: -ms-flexbox;
@@ -30,23 +43,73 @@
       -o-transform: skewX(30deg);
       -ms-transform: skewX(30deg);
       transform: skewX(30deg);
+      @media screen and (max-width: 800px){
+        right: -30%;
+      }
+      @media screen and (max-width: 500px){
+        right: 0;
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
 
       .content{
-        margin-left: 12%;
+        margin-left: 45px;
         text-align: center;
+        width: 100%;
+        max-width: 480px;
         -moz-transform: skewX(-30deg);
         -webkit-transform: skewX(-30deg);
         -o-transform: skewX(-30deg);
         -ms-transform: skewX(-30deg);
         transform: skewX(-30deg);
+        @media screen and(max-width: 1150px){
+          max-width: 360px;
+          margin-left: 25px;
+        }
+        @media screen and (max-width: 940px){
+          max-width: 300px;
+          margin-left: 20px;
+        }
+        @media screen and (max-width: 500px){
+          -moz-transform: skewX(0deg);
+          -webkit-transform: skewX(0deg);
+          -o-transform: skewX(0deg);
+          -ms-transform: skewX(0deg);
+          transform: skewX(0deg);
+          margin-left: 0;
+        }
         h3{
           color: #fefefe;
           font-size: 40px;
           font-weight: 400;
           line-height: 1;
+          @media screen and(max-width: 1150px){
+            font-size: 30px;
+          }
+          @media screen and (max-width: 940px){
+            font-size: 25px;
+          }
 
           span{
             font-size: 36px;
+            @media screen and(max-width: 1150px){
+              font-size: 26px;
+            }
+            @media screen and (max-width: 940px){
+              font-size: 22px;
+            }
           }
         }
         a{
@@ -58,6 +121,13 @@
           padding: 5px 15px;
           border-radius: 15px;
           margin-top: 60px;
+          @media screen and(max-width: 1150px){
+            margin-top: 30px;
+          }
+          @media screen and (max-width: 940px){
+            margin-top: 15px;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -80,10 +150,10 @@
   }
 
   .slick-prev {
-    left: 50px;
+    left: 20px;
   }
   .slick-next {
-    right: 50px;
+    right: 20px;
   }
 
   .slick-prev:before, .slick-next:before {

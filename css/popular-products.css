@@ -3,6 +3,16 @@
   background-size: cover;
   padding: 50px 0 0 0;
 }
+@media screen and (max-width: 940px) {
+  .popular-products {
+    padding: 50px 30px 0 30px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .popular-products {
+    padding: 50px 0 0 0;
+  }
+}
 .popular-products .container {
   width: 100%;
   max-width: 870px;

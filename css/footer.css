@@ -163,6 +163,12 @@
 .footer .container .top_footer .contacts .contacts_text .mail p {
   color: #282828;
 }
+.footer .container .top_footer .contacts .contacts_text .address p a,
+.footer .container .top_footer .contacts .contacts_text .phone p a,
+.footer .container .top_footer .contacts .contacts_text .mail p a {
+  color: #282828;
+  text-decoration: none;
+}
 .footer .container .bottom_footer {
   display: -webkit-box;
   display: -ms-flexbox;

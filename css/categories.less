@@ -24,6 +24,11 @@
     width: 100%;
     max-width: 772px;
     margin: 0 auto;
+    padding: 0 10px;
+
+    @media screen and (max-width: 600px){
+      width: 300px;
+    }
 
     .card{
       margin-top: 40px;
@@ -44,6 +49,17 @@
       -ms-flex-align: center;
       align-items: center;
       transition: @transition;
+      @media screen and (max-width: 760px){
+        width: 150px;
+        height: 150px;
+      }
+      @media screen and (max-width: 680px){
+        width: 130px;
+        height: 130px;
+      }
+      @media screen and (max-width: 600px){
+        margin-top: 20px;
+      }
 
       &:hover{
         box-shadow: 0px 7px 20px -10px rgba(0,0,0,0.7);
@@ -54,6 +70,9 @@
         svg{
           width: 80px;
           height: auto;
+          @media screen and (max-width: 680px){
+            width: 50px;
+          }
         }
       }
 
