@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    $('#menu-toggle').click(function(){
+        $(this).toggleClass('open');
+        $(".gumburger-container").toggleClass('open');
+        $(".menu ul").toggleClass('open');
+    });
+
     $("#filterToggle").click(function(){
         $(".filters").toggleClass("show");
     });
