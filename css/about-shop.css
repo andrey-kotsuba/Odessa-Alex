@@ -47,7 +47,17 @@
 .about-shop .container .about-shop-columns .column:first-child {
   margin-right: 10px;
 }
+@media screen and (max-width: 740px) {
+  .about-shop .container .about-shop-columns .column:first-child {
+    margin-right: 0;
+  }
+}
 .about-shop .container .about-shop-columns .column p {
   font-size: 13px;
   color: #484848;
+}
+@media screen and (max-width: 740px) {
+  .about-shop .container .about-shop-columns .column p {
+    text-align: center;
+  }
 }

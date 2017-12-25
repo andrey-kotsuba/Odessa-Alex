@@ -1084,9 +1084,19 @@ button {
 .about-shop .container .about-shop-columns .column:first-child {
   margin-right: 10px;
 }
+@media screen and (max-width: 740px) {
+  .about-shop .container .about-shop-columns .column:first-child {
+    margin-right: 0;
+  }
+}
 .about-shop .container .about-shop-columns .column p {
   font-size: 13px;
   color: #484848;
+}
+@media screen and (max-width: 740px) {
+  .about-shop .container .about-shop-columns .column p {
+    text-align: center;
+  }
 }
 .news {
   background: url("../img/news-bg.jpg") no-repeat;
@@ -1405,7 +1415,7 @@ button {
   height: 120px;
   width: 120px;
   border: 1px solid #e6e6e6;
-  margin: 0 0 30px 7px;
+  margin: 0 3px 30px 3px;
   background: #fff;
   transition: all 0.5s ease;
 }
@@ -1871,11 +1881,6 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 500px) {
-  .product-page .container {
-    padding: 0 5px;
-  }
-}
 .product-page .container .bread-crumbs {
   padding: 30px 0 40px 0;
 }
@@ -1998,6 +2003,7 @@ button {
 @media screen and (max-width: 700px) {
   .product-page .container .general-description-product .product-description {
     padding-left: 0;
+    padding-top: 25px;
   }
 }
 .product-page .container .general-description-product .product-description .product-name {
@@ -2008,10 +2014,20 @@ button {
   font-size: 20px;
   font-weight: 400;
 }
+@media screen and (max-width: 700px) {
+  .product-page .container .general-description-product .product-description .product-name h2 {
+    font-size: 18px;
+  }
+}
 .product-page .container .general-description-product .product-description .product-name h3 {
   color: #8bac53;
   font-size: 20px;
   font-weight: 400;
+}
+@media screen and (max-width: 700px) {
+  .product-page .container .general-description-product .product-description .product-name h3 {
+    font-size: 18px;
+  }
 }
 .product-page .container .general-description-product .product-description .presence {
   margin-bottom: 18px;
