@@ -439,11 +439,6 @@ button {
     width: 16px;
   }
 }
-@media screen and (max-width: 450px) {
-  .header .menu ul:last-child a img {
-    width: 12px;
-  }
-}
 .header .menu ul a {
   display: inline-block;
   text-decoration: none;
@@ -463,8 +458,9 @@ button {
 @media screen and (max-width: 550px) {
   .header .menu ul a {
     width: 100%;
-    padding: 4px 15px;
+    padding: 8px 15px;
     background: #fff;
+    font-size: 18px;
   }
 }
 .header .menu .open {
