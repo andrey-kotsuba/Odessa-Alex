@@ -123,17 +123,17 @@
   fill: #ecaf35;
   transition: all 0.5s ease;
   width: 60px;
-  height: auto;
+  height: 60px;
 }
 @media screen and (max-width: 900px) {
   .navigation .navigation_container .column:not(:first-child) a .column_content svg {
     width: 40px;
-    height: auto;
+    height: 40px;
   }
 }
 @media screen and (max-width: 550px) {
   .navigation .navigation_container .column:not(:first-child) a .column_content svg {
-    height: auto;
+    height: 35px;
     width: 35px;
   }
 }

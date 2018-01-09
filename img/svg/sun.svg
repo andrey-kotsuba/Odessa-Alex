@@ -1,0 +1,15 @@
+<svg version="1.1" id="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 125;" xml:space="preserve">
+<title>01</title>
+<path d="M50,30.4C39.2,30.3,30.3,39,30.2,49.8c-0.1,10.8,8.6,19.7,19.4,19.8S69.3,61,69.4,50.2c0-0.1,0-0.1,0-0.2
+	C69.5,39.2,60.8,30.4,50,30.4z M50,67.6c-9.7,0.1-17.7-7.7-17.8-17.4s7.7-17.7,17.4-17.8s17.7,7.7,17.8,17.4c0,0.1,0,0.1,0,0.2
+	C67.5,59.7,59.7,67.6,50,67.6z"/>
+<rect x="49" y="81.3" width="2" height="15.5"/>
+<rect x="49" y="3.2" width="2" height="15.5"/>
+<rect x="3.2" y="49" width="15.5" height="2"/>
+<rect x="81.3" y="49" width="15.5" height="2"/>
+<rect x="14.6" y="76.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -48.3274 38.5615)" width="15.5" height="2"/>
+<rect x="69.9" y="21.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6.9135 61.4424)" width="15.5" height="2"/>
+<rect x="21.4" y="14.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2686 22.3765)" width="2" height="15.5"/>
+<rect x="76.6" y="69.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -32.1594 77.6273)" width="2" height="15.5"/>
+</svg>

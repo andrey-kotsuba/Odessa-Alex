@@ -44,8 +44,8 @@
   display: block;
 }
 .catalog-categories .catalog-categories-cards a span svg {
-  height: auto;
   width: 55px;
+  height: 55px;
   transition: all 0.5s ease;
 }
 .catalog-categories .catalog-categories-cards a h5 {
@@ -55,7 +55,7 @@
   transition: all 0.5s ease;
 }
 .catalog-categories .catalog-categories-cards:hover {
-  box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
 }
 .catalog-categories .catalog-categories-cards:hover a span svg {
   fill: #fff;
@@ -68,92 +68,94 @@
 }
 .catalog-categories .cards-1:hover {
   background: #8bac53;
-  box-shadow: 0px 10px 25px -10px #8bac53;
+  box-shadow: 0 10px 25px -10px #8bac53;
 }
 .catalog-categories .cards-2 a span svg {
   fill: #c65e5e;
 }
 .catalog-categories .cards-2:hover {
   background: #c65e5e;
-  box-shadow: 0px 10px 25px -10px #c65e5e;
+  box-shadow: 0 10px 25px -10px #c65e5e;
 }
 .catalog-categories .cards-3 a span svg {
   fill: #79a4f8;
 }
 .catalog-categories .cards-3:hover {
   background: #79a4f8;
-  box-shadow: 0px 10px 25px -10px #79a4f8;
+  box-shadow: 0 10px 25px -10px #79a4f8;
 }
 .catalog-categories .cards-4 a span svg {
   fill: #a593da;
 }
 .catalog-categories .cards-4:hover {
   background: #a593da;
-  box-shadow: 0px 10px 25px -10px #a593da;
+  box-shadow: 0 10px 25px -10px #a593da;
 }
 .catalog-categories .cards-5 a span svg {
   fill: #6a5c4c;
 }
 .catalog-categories .cards-5:hover {
   background: #6a5c4c;
-  box-shadow: 0px 10px 25px -10px #6a5c4c;
+  box-shadow: 0 10px 25px -10px #6a5c4c;
 }
 .catalog-categories .cards-6 a span svg {
   fill: #8b71db;
 }
 .catalog-categories .cards-6:hover {
   background: #8b71db;
-  box-shadow: 0px 10px 25px -10px #8b71db;
+  box-shadow: 0 10px 25px -10px #8b71db;
 }
 .catalog-categories .cards-7 a span svg {
   fill: #8bac53;
 }
 .catalog-categories .cards-7:hover {
   background: #8bac53;
-  box-shadow: 0px 10px 25px -10px #8bac53;
+  box-shadow: 0 10px 25px -10px #8bac53;
 }
 .catalog-categories .cards-8 a span svg {
   fill: #5b4520;
 }
 .catalog-categories .cards-8:hover {
   background: #5b4520;
-  box-shadow: 0px 10px 25px -10px #5b4520;
+  box-shadow: 0 10px 25px -10px #5b4520;
 }
 .catalog-categories .cards-9 a span svg {
   fill: #3172f5;
 }
 .catalog-categories .cards-9:hover {
   background: #3172f5;
-  box-shadow: 0px 10px 25px -10px #3172f5;
+  box-shadow: 0 10px 25px -10px #3172f5;
 }
 .catalog-categories .cards-10 a span svg {
   fill: #c65e5e;
 }
 .catalog-categories .cards-10:hover {
   background: #c65e5e;
-  box-shadow: 0px 10px 25px -10px #c65e5e;
+  box-shadow: 0 10px 25px -10px #c65e5e;
 }
 .catalog-categories .cards-11 a span svg {
   stroke: #9ebc6a;
+  fill: none;
 }
 .catalog-categories .cards-11:hover {
   background: #9ebc6a;
-  box-shadow: 0px 10px 25px -10px #9ebc6a;
+  box-shadow: 0 10px 25px -10px #9ebc6a;
 }
 .catalog-categories .cards-11:hover a span svg {
   stroke: #fff;
+  fill: #9ebc6a;
 }
 .catalog-categories .cards-12 a span svg {
   fill: #fdcd24;
 }
 .catalog-categories .cards-12:hover {
   background: #fdcd24;
-  box-shadow: 0px 10px 25px -10px #fdcd24;
+  box-shadow: 0 10px 25px -10px #fdcd24;
 }
 .catalog-categories .cards-13 a span svg {
   fill: #c76161;
 }
 .catalog-categories .cards-13:hover {
   background: #c76161;
-  box-shadow: 0px 10px 25px -10px #c76161;
+  box-shadow: 0 10px 25px -10px #c76161;
 }
